@@ -12,25 +12,24 @@
     --text-color: ;
 }
 
-
-header{
+header {
     width: 100%;
-    /* border: 2px solid red; */
     height: 96px;
 }
 
-.header-container{
+.header-container {
     width: 1170px;
     height: 96px;
-    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
+
 .logo-img {
     width: 205px;
 }
+
 .button {
     background-color: #1da1f2;
     color: white;
@@ -51,14 +50,16 @@ header{
     background: transparent;
     border: none;
 }
-.btn-a{
+
+.btn-a {
     font-family: "Assistant", sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: #FFFFFF;
 }
-.btn-span{
-    font-family:  "Assistant", sans-serif;
+
+.btn-span {
+    font-family: "Assistant", sans-serif;
     font-size: 12px;
     font-weight: 400;
     color: #FFFFFF;
@@ -71,7 +72,7 @@ header{
     margin-bottom: 0;
     background: url(images/bannerbg.webp) no-repeat center center;
     background-size: cover;
-    position: relative; /* overlay এর জন্য important */
+    position: relative;
 }
 
 .overlay {
@@ -91,13 +92,13 @@ header{
     color: white;
     width: 702px;
     height: 620px;
-    /* border: 2px solid red; */
     margin: 0 auto;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .banner-h1 {
     font-size: 55px;
     text-align: center;
@@ -116,6 +117,7 @@ header{
     font-family: "Assistant", sans-serif;
     color: #FFFFFF;
 }
+
 .banner-h2 {
     font-size: 22px;
     text-align: center;
@@ -126,6 +128,7 @@ header{
     font-family: "Assistant", sans-serif;
     color: #FFFFFF;
 }
+
 .banner-btn {
     background-color: #1da1f2;
     color: white;
@@ -143,6 +146,7 @@ header{
     border: none;
     margin-top: 30px;
 }
+
 a.btn-a-banner {
     font-size: 24px;
     color: white;
@@ -150,23 +154,146 @@ a.btn-a-banner {
     font-weight: 700;
     font-family: "Assistant", sans-serif;
 }
+
 .banner-image {
     margin-top: 10px;
 }
 
+/* ================= Responsive CSS ================= */
+
+/* Tablet view */
+@media (max-width: 992px) {
+    .header-container {
+        flex-direction: row;
+        width: 100%;
+        padding: 15px;
+        justify-content: space-between;
+    }
+
+    .logo-img {
+        width: 180px;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        width: 160px;
+        height: 55px;
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .banner-content {
+        width: 90%;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .banner-h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .banner-title,
+    .banner-h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .banner-btn {
+        width: 200px;
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    a.btn-a-banner {
+        font-size: 20px;
+    }
+    .banner-container {
+        width: 100%;
+        padding: 30px 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        background: url(images/bannerbg.webp) no-repeat center center;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 576px) {
+    header {
+        width: 100%;
+        height: 96px;
+    }
+    .header-container {
+        flex-direction: row;
+        width: 100%;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    .logo-img {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+
+    .button {
+        width: 150px;
+        height: 50px;
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .banner-h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .banner-title,
+    .banner-h2 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .banner-btn {
+        width: 180px;
+        height: 45px;
+        margin-top: 20px;
+        padding: 8px 15px;
+    }
+
+    a.btn-a-banner {
+        font-size: 18px;
+    }
+    .banner-container {
+        width: 100%;
+        padding: 30px 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        background: url(images/bannerbg.webp) no-repeat center center;
+        background-size: cover;
+        position: relative;
+        margin-top: 25px;
+    }
+    .banner-image > img {
+        width: 100%;
+    }
+}
 /* service-section start  */
 
-.service-container{
+.service-container {
     width: 100%;
     padding: 20px 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     background-color: #f3f3f3;
 }
 
 .service-content-container {
     width: 1170px;
-    /* border: 2px solid red; */
     margin: 0 auto;
     padding-top: 50px;
 }
@@ -178,10 +305,12 @@ a.btn-a-banner {
     color: #1DA1F2;
     line-height: 52px;
 }
+
 .divider {
-    padding: 0px 5px 0px 5px;
+    padding: 0 5px;
     margin-top: 30px;
 }
+
 .divder-element {
     border: 1px solid #1DA1F2;
 }
@@ -194,45 +323,39 @@ a.btn-a-banner {
     margin-top: 30px;
 }
 
-.service-content{
-    width: 1170px;
-    height: 432.5px;
-    /* border: 2px solid red; */
-    margin: 0 auto;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
+.service-content,
 .service-content-2 {
     width: 1170px;
-    height: 432.5px;
-    /* border: 2px solid red; */
-    margin-top: 30px;
+    height: auto;
+    margin: 20px auto 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-.service-card{
+
+.service-card {
     width: 262.5px;
     height: 432.5px;
     border: 1px solid #1DA1F2;
     border-radius: 10px;
     padding: 10px 10px 20px;
     background-color: #FFFFFF;
+    margin-bottom: 20px;
 }
+
 img.card-image {
     width: 240px;
     border-radius: 5px;
 }
+
 .service-card-title {
     color: #1DA1F2;
     font-weight: 700;
     line-height: 23px;
     margin-top: 15px;
 }
+
 .service-card-description {
     margin-top: 10px;
     color: black;
@@ -241,6 +364,7 @@ img.card-image {
     font-weight: 400;
     font-family: "Assistant", sans-serif;
 }
+
 .banner-btn-service {
     background-color: #1da1f2;
     color: white;
@@ -256,9 +380,91 @@ img.card-image {
     height: 55px;
     border-radius: 10px;
     border: none;
-    /* margin-top: 30px; */
     margin: 30px auto;
+    display: block;
 }
+
+/* ================= Responsive CSS ================= */
+
+/* Tablet View */
+@media (max-width: 992px) {
+    .service-content-container {
+        width: 90%;
+        padding-top: 30px;
+    }
+
+    .service-content,
+    .service-content-2 {
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+
+    .service-card {
+        width: 45%;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    img.card-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-heading {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .service-heading2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+    .service-content-container {
+        width: 95%;
+        padding-top: 20px;
+    }
+
+    .service-content,
+    .service-content-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    img.card-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-heading {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .service-heading2 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .banner-btn-service {
+        width: 200px;
+        height: 50px;
+        font-size: 14px;
+        margin: 20px auto;
+    }
+}
+
 
 /* commercial  start  */
 
@@ -444,6 +650,164 @@ img.card-image {
     flex-direction: column;
 }
 
+/* ========= Responsive CSS ========= */
+
+/* Tablet View (<= 992px) */
+@media (max-width: 992px) {
+
+    .commercial-content,
+    .automation-service-content,
+    .service-area-content {
+        width: 90%;
+    }
+
+    .commercial-box-1 {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .commercial-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .commercial-box-content {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .service-conatiner {
+        margin-top: 30px;
+    }
+
+    .service-area-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-area-card {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .service-area-card-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-area-card-description {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .service-area-card-heading {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .automation-service-heading,
+    .commercial-heading2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .service-area-heading {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .banner-btn-service-area {
+        width: 220px;
+        height: 50px;
+        margin: 20px auto;
+        display: block;
+    }
+
+}
+
+
+/* Mobile View (<= 576px) */
+@media (max-width: 576px) {
+
+    .commercial-content,
+    .automation-service-content,
+    .service-area-content {
+        width: 95%;
+    }
+
+    .commercial-box-1 {
+        margin-top: 30px;
+    }
+
+    .commercial-image {
+        width: 100%;
+    }
+
+    .commercial-box-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .commercial-head-box,
+    .p-commercial {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .commercial-heading2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .automation-service-heading {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .service-area-heading {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .service-area-card {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .service-area-card-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-area-card-heading {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .service-area-card-description {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .banner-btn-service-area {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+        margin: 15px auto;
+    }
+
+}
+
+
 /* section {
 
    
@@ -594,19 +958,7 @@ margin-top: -20px;
     color: #111;
 }
 
-/* Responsive Design */
-@media (max-width: 1250px) {
-    .review-card, .extra-card {
-        width: calc(50% - 20px);
-        margin: 0 auto;
-    }
-}
 
-@media (max-width: 768px) {
-    .review-card, .extra-card {
-        width: 100%;
-    }
-}
 
 #main-gallary {
     width: 100%;
@@ -683,20 +1035,105 @@ margin-top: -20px;
     right: 15px; /* now inside visible area */
   }
 
-  @media (max-width: 600px) {
+/* ========= Responsive CSS for Review & Gallery Section ========= */
+
+/* Tablet View (<= 992px) */
+@media (max-width: 992px) {
+
+    .review-container {
+        width: 90%;
+    }
+
+    .review-cards,
+    .extra-review-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .review-card,
+    .extra-card {
+        width: 48%;
+        height: auto;
+    }
+
+    .re-haed,
+    .gallery-heading h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .gallery-conatiner {
+        width: 90%;
+        height: auto;
+        padding: 20px 0;
+    }
+
     .gallery-slider {
-      width: 90%;
-      height: auto;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/3;
     }
 
-    .slider-button.left {
-      left: 10px;
+    .slider-button {
+        padding: 8px 12px;
+        font-size: 20px;
     }
 
-    .slider-button.right {
-      right: 10px;
+}
+
+/* Mobile View (<= 576px) */
+@media (max-width: 576px) {
+
+    .review-container {
+        width: 95%;
     }
-  }
+
+    .review-cards,
+    .extra-review-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card,
+    .extra-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .review-card p,
+    .extra-card p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .review-card h3,
+    .extra-card h3 {
+        font-size: 1rem;
+    }
+
+    .re-haed,
+    .gallery-heading h2 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .gallery-conatiner {
+        width: 95%;
+        height: auto;
+    }
+
+    .gallery-slider {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/3;
+    }
+
+    .slider-button {
+        padding: 6px 10px;
+        font-size: 18px;
+    }
+
+}
 
 
   footer {
@@ -781,133 +1218,71 @@ margin-top: -20px;
     width: 120px;
 }
 
+/* ========= Responsive CSS for Footer & Service Card Section ========= */
 
+/* Tablet View (<= 992px) */
+@media (max-width: 992px) {
 
-/* Small devices (phones) */
-@media (max-width: 767px) {
-    .header-container,
-    .service-content,
-    .service-content-2,
-    .commercial-box-1,
-    .service-area-content {
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
+    .service-content-3,
+    .service-content-4 {
+        width: 90%;
+        height: auto;
+        justify-content: center;
     }
-  
-    .logo-img {
-      width: 150px;
+
+    .service-card-3,
+    .service-card-4 {
+        width: 45%;
+        height: auto;
+        margin-bottom: 20px;
     }
-  
-    .button {
-      width: 80%;
-      height: auto;
-      padding: 10px;
+
+    .review-img-01 {
+        width: 100px;
     }
-  
-    .banner-content {
-      width: 100%;
-      height: auto;
-      padding: 20px;
+
+    .footer-conatiner {
+        flex-direction: column;
+        padding: 20px 0;
     }
-  
-    .banner-h1 {
-      font-size: 32px;
-      line-height: 40px;
+
+    .footer-copyright-text p {
+        font-size: 13px;
+        text-align: center;
     }
-  
-    .banner-title,
-    .banner-h2 {
-      font-size: 16px;
-      line-height: 24px;
+
+}
+
+/* Mobile View (<= 576px) */
+@media (max-width: 576px) {
+
+    .service-content-3,
+    .service-content-4 {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        height: auto;
     }
-  
-    .banner-btn,
-    .banner-btn-service,
-    .banner-btn-service-area {
-      width: 80%;
-      height: 45px;
-      font-size: 16px;
+
+    .service-card-3,
+    .service-card-4 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
     }
-  
-    .service-card,
-    .service-area-card {
-      width: 90%;
-      height: auto;
-      margin-bottom: 20px;
+
+    .review-img-01 {
+        width: 80px;
     }
-  
-    .commercial-box-content,
-    .commercial-image,
-    .service-area-card-image {
-      width: 100%;
-      height: auto;
+
+    footer {
+        padding: 40px 10px;
     }
-  
-    .review-cards {
-      flex-direction: column;
+
+    .footer-copyright-text p {
+        font-size: 12px;
+        text-align: center;
     }
-  
-    .re-haed {
-      font-size: 28px;
-    }
-  
-    .service-area-card-description,
-    .service-area-card-heading {
-      text-align: center;
-      font-size: 18px;
-    }
-  
-    .automation-service-content {
-      width: 100%;
-      padding: 0 10px;
-    }
-  }
-  
-  /* Medium devices (tablets) */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .header-container,
-    .service-content,
-    .service-content-2,
-    .commercial-box-1,
-    .service-area-content {
-      width: 95%;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    .service-card,
-    .service-area-card {
-      width: 45%;
-      margin-bottom: 30px;
-    }
-  
-    .commercial-box-content,
-    .commercial-image,
-    .service-area-card-image {
-      width: 100%;
-      height: auto;
-    }
-  
-    .banner-h1 {
-      font-size: 40px;
-    }
-  
-    .banner-title,
-    .banner-h2 {
-      font-size: 18px;
-    }
-  
-    .banner-btn,
-    .banner-btn-service,
-    .banner-btn-service-area {
-      width: 60%;
-      height: 50px;
-    }
-  
-    .review-cards {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-  
+
+}
+

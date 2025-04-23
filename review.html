@@ -1,49 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Footer Design</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    footer {
-      width: 100%;
-      background: url('/images/footer-bg.png') no-repeat center center / cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100px;
-    }
-
-    .footer-conatiner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-    }
-
-    .footer-copyright-text p {
-      font-size: 14px;
-      color: #000;
-      font-weight: 600;
-    }
-  </style>
-</head>
-<body>
-
-<footer>
-  <div class="footer-conatiner">
-    <div class="footer-copyright-text">
-      <p>Copyright © 2015-2025 Door N Key Locksmith | All rights reserved</p>
-    </div>
+<div class="call-button-final">
+  <img src="images/call.png" 
+       alt="Call Icon" class="call-icon-img" />
+  <div class="call-text">
+    <strong>(561) 556-6939</strong>
+    <div class="sub-text">Call Now For Help!</div>
   </div>
-</footer>
+</div>
 
-</body>
-</html>
+
+
+<style>
+ .call-button-final {
+  display: flex;
+  align-items: center;
+  background-color: #1da1f2;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 10px;
+  width: 200px;
+  height: 80px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.call-icon-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    margin-top: -20px;
+}
+
+.call-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.call-text strong {
+  font-size: 16px;
+  display: block;
+}
+
+.sub-text {
+  font-size: 14px;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+
+
+</style>
